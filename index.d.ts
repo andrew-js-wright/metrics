@@ -213,6 +213,10 @@ declare namespace metrics {
     weight(time: number): number;
     rescale(): void;
   }
+
+  class Server {
+    constructor(port: number, trackedMetrics?: Metrics)
+  }
 }
 
 export = metrics;
